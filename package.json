@@ -15,5 +15,13 @@
     "next": "^12.0.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObjectivelyOriented/Hendrickson-Art-Expo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ObjectivelyOriented/Hendrickson-Art-Expo/issues"
+  },
+  "homepage": "https://github.com/ObjectivelyOriented/Hendrickson-Art-Expo#readme"
 }
