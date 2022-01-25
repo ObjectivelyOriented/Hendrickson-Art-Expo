@@ -1,6 +1,6 @@
 import Header from "./Header";
 import NavBar from "./NavBar";
-
+import Head from "next/head";
 const layoutStyle = {
   display: "flex",
   flexDirection: "column",
