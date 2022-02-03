@@ -1,9 +1,14 @@
 import HeaderStyle from "../styles/Header.module.scss";
-  
-  const Header = () => (
-    <div className={HeaderStyle.Header}>
-      HEADER
+
+import Link from "next/link";
+
+  const Header = props => (
+    <Link href = "/">
+       <div className={HeaderStyle.Header}>
+      {props.appTitle}
     </div>
+    </Link>
+   
   );
   
   export default Header;

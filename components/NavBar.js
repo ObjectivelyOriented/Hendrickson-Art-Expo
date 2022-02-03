@@ -1,13 +1,18 @@
-const navBarStyle = {
-    backgroundColor: "red",
-    color: "white",
-    width: "100%",
-    height: "60px"
-  };
-  
-  const NavBar = () => (
-    <div className="NavBar" style={navBarStyle}>
-      NAVBAR
+
+import NavBarStyle from "../styles/NavBar.module.scss";
+import NavTabs from "./NavTabs";  
+
+
+  const NavBar = props => (
+    <div className={NavBarStyle.NavBar}>
+      {props.tabs.map(tab => (
+        <NavTabs
+        key={tab.path}
+        path={tab.path}
+        label={tab.label}
+        icon={tab.icon}
+        />
+      ))}
     </div>
   );
   
