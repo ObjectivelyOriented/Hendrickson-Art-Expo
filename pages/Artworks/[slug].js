@@ -1,21 +1,30 @@
 import React from 'react'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import Layout from "../../components/Layout"
+import ArtworkStyle from "../../styles/Artwork.module.scss"
 
-
-function PostTemplate({ content, data }) {
+function ArtworkTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
   const frontmatter = data
 
   return (
     <>
-      <h1>{frontmatter.title}</h1>
-      <ReactMarkdown source={content} />
+    <Layout>
+    <div className = {ArtworkStyle.text}>
+    
+    <h1>{frontmatter.title}</h1>
+    <br/>
+      <ReactMarkdown children={content} />
+    </div>
+    </Layout>
+      
+
     </>
   )
 }
 
-PostTemplate.getInitialProps = async (context) => {
+ArtworkTemplate.getInitialProps = async (context) => {
   const { slug } = context.query
   
   // Import our .md file using the `slug` from the URL
@@ -30,4 +39,4 @@ PostTemplate.getInitialProps = async (context) => {
   return { slug }
 }
 
-export default PostTemplate
+export default ArtworkTemplate
