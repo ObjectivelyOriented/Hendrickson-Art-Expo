@@ -17,15 +17,17 @@ const Layout = props =>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
       </Head>
-
-      <Header appTitle = {appTitle}/>
+      <NavBar tabs = {tabs} />
+      
       <div className={LayoutStyle.Content}>
         {props.children}
       </div>
-      <NavBar tabs = {tabs} />
+    
     </div>
   );
 };
 
+//header code
 
+//<Header appTitle = {appTitle}/>
 export default Layout;
