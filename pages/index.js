@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+
 import SlidesStyle from "../styles/Slides.module.scss";
 import Link from "next/link";
 import Router from "next/router";
@@ -22,6 +23,7 @@ const Index = () =>
     <Link href="#slide-5" scroll={false}>
       <a>5</a>
     </Link>
+
 
     <div className={SlidesStyle.slides}>
       <div name="slide-1" id="slide-1">

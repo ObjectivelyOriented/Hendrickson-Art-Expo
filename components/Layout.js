@@ -1,5 +1,6 @@
 import Header from "./Header";
 import NavBar from "./NavBar";
+
 import Head from "next/head";
 import LayoutStyle from "../styles/Layout.module.scss";
 import tabs from "../config/tabs";
@@ -26,6 +27,7 @@ const Layout = props =>
     </div>
   );
 };
+
 
 
 export default Layout;

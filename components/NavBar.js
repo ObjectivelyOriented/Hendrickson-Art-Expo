@@ -1,4 +1,5 @@
 
+
 import NavBarStyle from "../styles/NavBar.module.scss";
 import NavTabs from "./NavTabs";  
 
@@ -17,3 +18,4 @@ import NavTabs from "./NavTabs";
   );
   
   export default NavBar;
+
