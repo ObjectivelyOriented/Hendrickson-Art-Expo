@@ -1,8 +1,16 @@
 
-const Header = () => (
-  <div>
-<p>navbar</p>
-</div>
-);
+import HeaderStyle from "../styles/Header.module.scss";
 
-export default Header;
+import Link from "next/link";
+
+  const Header = props => (
+    <Link href = "/">
+       <div className={HeaderStyle.Header}>
+      {props.appTitle}
+    </div>
+    </Link>
+   
+  );
+  
+  export default Header;
+
