@@ -4,7 +4,9 @@ import NavTabs from "./NavTabs";
 
 
   const NavBar = props => (
+  
     <div className={NavBarStyle.NavBar}>
+    <div className = {NavBarStyle.title}> Hawk Art Expo </div>
       {props.tabs.map(tab => (
         <NavTabs
         key={tab.path}

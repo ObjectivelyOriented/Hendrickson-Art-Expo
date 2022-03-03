@@ -7,7 +7,7 @@ const Index = () =>
 <Layout>
     
 <div className={SlidesStyle.slider}>
-    <Link href="#slide-1" scroll={false}>
+  <Link href="#slide-1" scroll={false}>
       <a>1</a>
     </Link>
     <Link href="#slide-2" scroll={false}>
@@ -22,8 +22,7 @@ const Index = () =>
     <Link href="#slide-5" scroll={false}>
       <a>5</a>
     </Link>
-
-    <div className={SlidesStyle.slides}>
+   <div className={SlidesStyle.slides}>
       <div name="slide-1" id="slide-1">
         1
       </div>
@@ -34,6 +33,10 @@ const Index = () =>
       <div id="slide-4">4</div>
       <div id="slide-5">5</div>
     </div>
+  
+  
+
+   
   </div>
     
 </Layout>;

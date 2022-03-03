@@ -7,7 +7,7 @@ import tabs from "../config/tabs";
 
 const Layout = props => 
 {
-  const appTitle = 'Hendrickson Art Expo';
+  const appTitle = 'Hawk Art Expo';
   return (
     
     <div className={LayoutStyle.Layout} >

@@ -25,6 +25,7 @@ function ArtworkTemplate({ content, data }) {
 }
 
 ArtworkTemplate.getInitialProps = async (context) => {
+  //Catch the MD file from the URL
   const { slug } = context.query
   
   // Import our .md file using the `slug` from the URL

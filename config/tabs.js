@@ -25,6 +25,16 @@ const tabs = [
         label:"About",
         path: "/about",
         icon: <FontAwesomeIcon icon ={faCompass} />
+    },
+  {
+        label:"News",
+        path: "/news",
+        icon: <FontAwesomeIcon icon ={faCompass} />
+    },
+  {
+        label:"Contact",
+        path: "/contact",
+        icon: <FontAwesomeIcon icon ={faCompass} />
     }
 ];
 
