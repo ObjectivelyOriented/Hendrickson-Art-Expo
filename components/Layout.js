@@ -7,25 +7,26 @@ import tabs from "../config/tabs";
 
 const Layout = props => 
 {
-  const appTitle = 'Hawk Art Expo';
+  const appTitle = 'TSA Art Gallery';
   return (
     
     <div className={LayoutStyle.Layout} >
 
 <Head>
-        <title>Hendrickson Art Expo</title>
+        <title>TSA Art Expo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
       </Head>
 
-      <Header appTitle = {appTitle}/>
+     <NavBar appTitle = {appTitle} tabs = {tabs} />
       <div className={LayoutStyle.Content}>
         {props.children}
       </div>
-      <NavBar tabs = {tabs} />
+     
     </div>
   );
 };
-
+// header
+//  <Header appTitle = {appTitle}/>
 
 export default Layout;

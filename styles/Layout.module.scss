@@ -6,18 +6,19 @@
   flex-direction: column;
 
   height: 100%;
-  width: 100%;
+  
 
   .Content {
-    flex: 1;
+    /*flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+  */
     width: 100%;
+    height:100%;
 
-    background: $secondary;
-    color: $on-secondary;
+    background:#faedd4;
+    color:#594726;
     font-family: $core-font;
 
     a {

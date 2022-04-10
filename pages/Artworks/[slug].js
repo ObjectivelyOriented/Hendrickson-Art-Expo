@@ -3,6 +3,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Layout from "../../components/Layout"
 import ArtworkStyle from "../../styles/Artwork.module.scss"
+import Image from 'next/image'
 
 function ArtworkTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
@@ -14,6 +15,13 @@ function ArtworkTemplate({ content, data }) {
     <div className = {ArtworkStyle.text}>
     
     <h1>{frontmatter.title}</h1>
+      
+    <Image
+      src={frontmatter.image}
+      alt="Picture of the author"
+      width={100}
+      height={100}
+    />
     <br/>
       <ReactMarkdown children={content} />
     </div>

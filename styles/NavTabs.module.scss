@@ -7,7 +7,7 @@
     height: 100%;
   
     cursor: pointer;
-  
+  transition: color 1s;
     .Icon {
       font-size: 20px;
     }
@@ -17,3 +17,6 @@
       text-transform: capitalize;
     }
   }
+.Tabs:hover{
+  color:#A1A1A1;
+}

@@ -8,7 +8,7 @@
   height: 50px;
   width: 100%;
 
-  padding: 0 20px;
+  padding: 20px;
 
   font-family: $logo-font;
   font-size: 24px;
@@ -16,7 +16,8 @@
   color: $on-secondary;
   text-transform: uppercase;
 
-  background: $highlight;
+  background: linear-gradient(lightblue, cyan);
 
   cursor: pointer;
 }
+

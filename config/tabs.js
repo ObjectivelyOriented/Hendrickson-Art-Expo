@@ -25,7 +25,8 @@ const tabs = [
         label:"About",
         path: "/about",
         icon: <FontAwesomeIcon icon ={faCompass} />
-    },
+    }
+     /* ,
   {
         label:"News",
         path: "/news",
@@ -35,7 +36,7 @@ const tabs = [
         label:"Contact",
         path: "/contact",
         icon: <FontAwesomeIcon icon ={faCompass} />
-    }
+    }*/
 ];
 
 export default tabs;
