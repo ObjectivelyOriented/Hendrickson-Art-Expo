@@ -15,12 +15,20 @@ function ArtworkTemplate({ content, data }) {
     <div className = {ArtworkStyle.text}>
     
     <h1>{frontmatter.title}</h1>
+<<<<<<< HEAD
       
     <Image
       src={frontmatter.image}
       alt="Picture of the author"
       width={100}
       height={100}
+=======
+    <Image
+      src={frontmatter.image}
+      alt="Picture of the author"
+      width={500}
+      height={500}
+>>>>>>> origin/Replit-branch
     />
     <br/>
       <ReactMarkdown children={content} />
