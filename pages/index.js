@@ -3,11 +3,11 @@ import IndexStyle from "../styles/Index.module.scss";
 import Link from "next/link";
 import Router from "next/router";
 import Image from "next/image";
-import myImg from './cafe_terrace.jpeg'
-import myImg1 from './monalisa.webp'
-import myImg2 from './orientalpoppies.jpeg'
-import myImg3 from './theoldguitarist.jpeg'
-import myImg4 from './creationofadam.jpeg'
+import myImg from './cafeterrace_HDcropped.jpeg'
+import myImg1 from './monalisa_HDcropped.jpeg'
+import myImg2 from './orientalpoppies_HDcropped.jpg'
+import myImg3 from './oldguitarist_HDcropped.jpeg'
+import myImg4 from './creationofadam_HDcropped.jpeg'
 import myImg5 from '../public/art_expo.png'
 
 
@@ -15,11 +15,10 @@ var artArray = [
   myImg, myImg1, myImg2, myImg3, myImg4
 ];
 
-var imgWidth = 500;
-var imgHeight = 500;
+var imgWidth = 250;
+var imgHeight = 250;
 
 var randomImg = artArray[Math.floor(Math.random()*artArray.length)];
-
 
 
 const Index = () => 
@@ -29,23 +28,23 @@ const Index = () =>
 <br/>
   <div className = {IndexStyle.featured}>
     <Image className = {IndexStyle.Images} src = {myImg5}/> 
-    </div>
+  </div>
   <div classname = {IndexStyle.artflex}>
-<h2 className = {IndexStyle.title}> Featured - </h2>  
-  <div className = {IndexStyle.artflex}>
-  <a href="/Artworks/monalisa_HDcropped">
- <div>
-<Image 
+  <h2 className = {IndexStyle.title}> Featured - </h2>  
+    <div className = {IndexStyle.artflex}>
+    <a href="/Artworks/monalisa">
+    <div>
+  <Image 
   className = {IndexStyle.Images2} 
   src = {myImg1}
   width={imgWidth}
   height={imgHeight}
-/> 
+  /> 
   <p>"Mona Lisa" by Leonardo da Vinci</p>
-  </div>
-  </a>
+    </div>
+    </a>
   <a href="/Artworks/orientalpoppies">
-  <div>
+  <div class="row">
 <Image 
   className = {IndexStyle.Images2} 
   src = {myImg2}
