@@ -17,7 +17,7 @@ const Layout = props =>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
       </Head>
-<<<<<<< HEAD
+
 
      <NavBar appTitle = {appTitle} tabs = {tabs} />
       <div className={LayoutStyle.Content}>
@@ -27,21 +27,8 @@ const Layout = props =>
     </div>
   );
 };
-// header
-//  <Header appTitle = {appTitle}/>
-=======
-      <NavBar tabs = {tabs} />
-      
-      <div className={LayoutStyle.Content}>
-        {props.children}
-      </div>
-    
-    </div>
-  );
-};
 
-//header code
->>>>>>> origin/Replit-branch
+
 
 //<Header appTitle = {appTitle}/>
 export default Layout;

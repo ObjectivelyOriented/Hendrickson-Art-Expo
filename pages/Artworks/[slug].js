@@ -15,20 +15,15 @@ function ArtworkTemplate({ content, data }) {
     <div className = {ArtworkStyle.text}>
     
     <h1>{frontmatter.title}</h1>
-<<<<<<< HEAD
+
       
-    <Image
-      src={frontmatter.image}
-      alt="Picture of the author"
-      width={100}
-      height={100}
-=======
+
     <Image
       src={frontmatter.image}
       alt="Picture of the author"
       width={500}
       height={500}
->>>>>>> origin/Replit-branch
+
     />
     <br/>
       <ReactMarkdown children={content} />
@@ -40,20 +35,4 @@ function ArtworkTemplate({ content, data }) {
   )
 }
 
-ArtworkTemplate.getInitialProps = async (context) => {
-  //Catch the MD file from the URL
-  const { slug } = context.query
-  
-  // Import our .md file using the `slug` from the URL
-  const content = await import(`../../content/${slug}.md`)
-  
-  // Parse .md data through `matter`
-  const data = matter(content.default)
-  
-  // Pass data to our component props
-  return { ...data }
-
-  return { slug }
-}
-
-export default ArtworkTemplate
+export default ArtworkTemplate;

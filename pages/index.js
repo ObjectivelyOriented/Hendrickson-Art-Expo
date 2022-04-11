@@ -15,7 +15,8 @@ var artArray = [
   myImg, myImg1, myImg2, myImg3, myImg4
 ];
 
-
+var imgWidth = 500;
+var imgHeight = 500;
 
 var randomImg = artArray[Math.floor(Math.random()*artArray.length)];
 
@@ -32,33 +33,58 @@ const Index = () =>
   <div classname = {IndexStyle. artflex}>
 <h2 className = {IndexStyle.title}> Featured - </h2>  
   <div className = {IndexStyle.artflex}>
-  <a href="/Artworks/monalisa">
+  <a href="/Artworks/monalisa_HDcropped">
  <div>
-<Image className = {IndexStyle.Images2} src = {myImg1}/> 
+<Image 
+  className = {IndexStyle.Images2} 
+  src = {myImg1}
+  width={imgWidth}
+  height={imgHeight}
+/> 
   <p>"Mona Lisa" by Leonardo da Vinci</p>
   </div>
   </a>
   <a href="/Artworks/orientalpoppies">
   <div>
-<Image className = {IndexStyle.Images2} src = {myImg2}/>
+<Image 
+  className = {IndexStyle.Images2} 
+  src = {myImg2}
+  width={imgWidth}
+  height={imgHeight}
+/> 
   <p>"Oriental Poppies" by Georgia O'Keefe</p>
   </div>
   </a>
   <a href="/Artworks/oldguitarist">
    <div>
-<Image className = {IndexStyle.Images2} src = {myImg3}/> 
+<Image 
+  className = {IndexStyle.Images2} 
+  src = {myImg3}
+  width={imgWidth}
+  height={imgHeight}
+/> 
   <p>"The Old Guitarist" by Pablo Picasso</p>
   </div>
   </a>
   <a href="/Artworks/creationofadam">
   <div>
-<Image className = {IndexStyle.Images2} src = {myImg4}/> 
+<Image 
+  className = {IndexStyle.Images2} 
+  src = {myImg4}
+  width={imgWidth}
+  height={imgHeight}
+/> 
   <p>"The Creation of Adam" by Michelangelo</p>
   </div>
   </a>
   <a href="/Artworks/cafeterrace">
   <div>
-<Image className = {IndexStyle.Images2} src = {myImg}/>
+<Image 
+  className = {IndexStyle.Images2} 
+  src = {myImg}
+  width={imgWidth}
+  height={imgHeight}
+/> 
   <p>"Cafe Terrace At Night" by Vincent van Gogh</p>
   </div>
  
