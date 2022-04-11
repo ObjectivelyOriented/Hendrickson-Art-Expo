@@ -30,7 +30,7 @@ const Index = () =>
   <div className = {IndexStyle.featured}>
     <Image className = {IndexStyle.Images} src = {myImg5}/> 
     </div>
-  <div classname = {IndexStyle. artflex}>
+  <div classname = {IndexStyle.artflex}>
 <h2 className = {IndexStyle.title}> Featured - </h2>  
   <div className = {IndexStyle.artflex}>
   <a href="/Artworks/monalisa_HDcropped">
